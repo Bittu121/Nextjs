@@ -11,3 +11,4 @@ function page() {
 export default page;
 
 //group route
+//http://localhost:3000/cart
