@@ -1,15 +1,19 @@
+//*******Number*********
 // let a:number;
 // a = 96;
 // a.toFixed()
 
+//******String*******
 // let b:string
 // b=78  //error
 // b="type script" //works
 // b.concat()
 
+//*******Boolean**********/
 // let isOnline:boolean
 // isOnline=true
 
+//***********Array**********/
 // let arr:number[];
 // arr=[78]
 // arr.filter(()=>{})
@@ -22,12 +26,15 @@
 // arr=[10,"num",false]  //allow make sure maintain order
 // arr=[10,"num",false,20] ; // not allowed
 
+
+//*************enum***********/
 // enum role {
 //   "user",
 //   "admin",
 // }
 // role.admin;
 
+//**********Any type********/
 // let a:any   //Note- not used any in type script
 // a=78
 // a="java script"
@@ -70,7 +77,7 @@
 //Type annotation
 // let a: number;
 
-//Type Alias
+//**********Type Alias***********
 // type ayush = number | string | boolean;
 // let a: ayush;
 // a = 89;
@@ -117,6 +124,7 @@
 // return a
 // }
 
+//***********interface*************
 // interface post{
 //     description:string,
 //     image?:string
@@ -172,17 +180,17 @@
 
 // let a:user;
 
-//Union
+//*****************UNION****************
 // type ApiResponse = "ok" | "fail" | "loading";
 // let res: ApiResponse = "ok";
 
-//Intersection
+//****************Intersection**********
 // type Person = { name: string };
 // type Contact = { phone: string };
 // type Full = Person & Contact;
 // const user: Full = { name: "Aman", phone: "123" };
 
-//Generics
+//****************Generics**************
 // function identity<T>(value: T): T {
 //   return value;
 // }
@@ -211,27 +219,33 @@
 //   age: 21,
 // };
 
-
-//Global Declaration --> used in reactjs
+//*********Global Declaration --> used in reactjs******
 //src/type.d.ts
-declare global {
-  interface Window {
-    appVersion: string;
-  }
-  type ApiResponse<T> = {
-    data: T;
-    error?: string;
-  };
-}
-export {};
+// declare global {
+//   interface Window {
+//     appVersion: string;
+//   }
+//   type ApiResponse<T> = {
+//     data: T;
+//     error?: string;
+//   };
+// }
+// export {};
 
 //
-declare global {
-  type ayush = number | string;
+// declare global {
+//   type ayush = number | string;
 
-  type user = {
-    name: "string";
-  };
-}
+//   type user = {
+//     name: "string";
+//   };
+// }
 
-export {};
+// export {};
+
+
+//***********Use this global declaration********
+let a: user = {
+  name: "ayush",
+};                 
+

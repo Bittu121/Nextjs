@@ -2,7 +2,7 @@ declare global {
   type ayush = number | string;
 
   type user = {
-    name: "string";
+    name: string;
   };
 }
 
